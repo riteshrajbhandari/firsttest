@@ -1,0 +1,63 @@
+ritesh@ritesh-Inspiron-3493:~/Documents/New Folder$ git init
+Initialized empty Git repository in /home/ritesh/Documents/New Folder/.git/
+ritesh@ritesh-Inspiron-3493:~/Documents/New Folder$ git commit "First Project"
+error: pathspec 'First Project' did not match any file(s) known to git
+ritesh@ritesh-Inspiron-3493:~/Documents/New Folder$ git commit -m "First Project"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	hello.txt
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+ritesh@ritesh-Inspiron-3493:~/Documents/New Folder$ git add hello.txt
+ritesh@ritesh-Inspiron-3493:~/Documents/New Folder$ git add index.html
+ritesh@ritesh-Inspiron-3493:~/Documents/New Folder$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   hello.txt
+	new file:   index.html
+
+ritesh@ritesh-Inspiron-3493:~/Documents/New Folder$ git commit -m "First Project"
+[master (root-commit) 7427193] First Project
+ 2 files changed, 6 insertions(+)
+ create mode 100644 hello.txt
+ create mode 100644 index.html
+ritesh@ritesh-Inspiron-3493:~/Documents/New Folder$ git config --global user.name riteshrajbhandari
+ritesh@ritesh-Inspiron-3493:~/Documents/New Folder$ git config --global user.email 77riteshrajbhandari77@gmail.com
+ritesh@ritesh-Inspiron-3493:~/Documents/New Folder$ git status
+On branch master
+nothing to commit, working tree clean
+ritesh@ritesh-Inspiron-3493:~/Documents/New Folder$ git commit -m "First Project"
+On branch master
+nothing to commit, working tree clean
+ritesh@ritesh-Inspiron-3493:~/Documents/New Folder$ git status
+On branch master
+nothing to commit, working tree clean
+ritesh@ritesh-Inspiron-3493:~/Documents/New Folder$ git remote add Test https://github.com/riteshrajbhandari/firsttest.git
+ritesh@ritesh-Inspiron-3493:~/Documents/New Folder$ git remote -v
+Test	https://github.com/riteshrajbhandari/firsttest.git (fetch)
+Test	https://github.com/riteshrajbhandari/firsttest.git (push)
+ritesh@ritesh-Inspiron-3493:~/Documents/New Folder$ git remote -v
+Test	https://github.com/riteshrajbhandari/firsttest.git (fetch)
+Test	https://github.com/riteshrajbhandari/firsttest.git (push)
+ritesh@ritesh-Inspiron-3493:~/Documents/New Folder$ git push -u Test master
+Username for 'https://github.com': riteshrajbhandari
+Password for 'https://riteshrajbhandari@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 345 bytes | 43.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/riteshrajbhandari/firsttest.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'Test'.
+ritesh@ritesh-Inspiron-3493:~$ git clone http://github.com/drpoudel3785/testforg.git
