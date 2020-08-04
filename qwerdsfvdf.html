@@ -49,6 +49,35 @@
                                         
                                         
                                     </fieldset>
+                                    <fieldset>
+                                        <legend>Registration</legend>
+                                        <label>Courses</label>                                       
+                                        <input type="checkbox" name="php" value="php" checked="checked">PHP
+                                        <input type="checkbox" name="java" value="java">Java
+                                        <input type="checkbox" name="dotnet" value="dotnet">.net
+                                        <br/> 
+                                        <label>Gemder</label>
+                                        <input type="radio" name="gender" value="male" checked="checked">Male
+                                        <input type="radio" name="gender" value="female">Female
+                                        <input type="radio" name="gender" value="other">Other
+                                        <br>
+
+                                        <label>Say Hello</label>
+                                        <input type="button" onclick="alert('Good MOrning!');" value="Say it">
+                                        <br>
+                                        <label>Close Form</label>
+                                        <input type="button" onclick="window.close();" value="Closethispage">
+                                        <br>
+
+                                        <label>Your Photo</label>
+				                        <input type="file" name="photo"/>
+				                        <br/>
+                                        
+                                        <input type="hidden" name="name" value="secretvalue101">
+
+                                        <input type="submit" name="submit" value="Register">
+                                        <input type="reset" name="reset" value="Clear">
+                                    </fieldset>
                                 </form>
                             </td>
                         </tr>
